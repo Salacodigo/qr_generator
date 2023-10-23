@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myNewApp": {
+    "QR_Generator": {
       "projectType": "application",
       "schematics": {},
       "root": "",

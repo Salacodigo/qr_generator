@@ -1,3 +1,6 @@
+# QR Generator
+[ Link al proyecto ](https://salacodigo.github.io/qr_generator/)
+
 ## Construyendo la app
 
 ```
@@ -24,8 +27,10 @@ $ npm install -g angular-cli-ghpages
 
 $ ng build --prod --base-href https://[username].github.io/[repo]/`
 $ ng build --prod --base-href https://Salacodigo.github.io/qr_generator/
+$ ng build --configuration production --base-href https://Salacodigo.github.io/qr_generator/
 
 $ ngh --dir=dist/[project-name]
+$ ngh --dir=dist/QR_Generator
 
 Build despues de la primera vez:
 $ ng build --prod
