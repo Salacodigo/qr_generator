@@ -1,0 +1,36 @@
+<!-- CODIGO QR -->
+<h1>QR code Generator</h1>
+
+<qrcode [qrdata]="url" [width]="256" [errorCorrectionLevel]="errorCorLevel"></qrcode>
+
+
+
+
+<!-- FORMULARIO -->
+<form [formGroup]="myForm"  (ngSubmit)="enviarFormulario()">
+
+    <!-- URL -->
+    <div>
+        <label>Url</label>
+        <div>
+            <input 
+                type="text"
+                formControlName="url"
+                placeholder="Ingrese la url"
+            >
+        </div>
+    </div>
+  
+    <button type="submit" [disabled]="myForm.invalid">Enviar</button>
+</form>
+
+<h2>Form Valid: {{ myForm.valid }} </h2>
+<h2>Form Status: {{ myForm.status }} </h2>
+<h2>Form Pending: {{ myForm.pending }} </h2>
+<hr>
+<h2>Form errors</h2>
+<pre>{{ myForm.errors | json }}</pre>
+
+<h3>url</h3>
+<pre>{{ myForm.controls['url'].errors | json }}</pre>
+
