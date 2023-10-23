@@ -22,6 +22,7 @@ export class QrFormComponent {
   public url: string = 'google.com';
   public errorCorLevel: any = 'M';
   public testUrl : string = 'https://www.linkedin.com/in/santiagosalamancadev';
+  public qrWidth : number = 350;
 
   public myForm : FormGroup = this.fb.group({ 
     url: [this.testUrl, [

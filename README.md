@@ -33,5 +33,5 @@ $ ngh --dir=dist/[project-name]
 $ ngh --dir=dist/QR_Generator
 
 Build despues de la primera vez:
-$ ng build --prod
+$ ng build --configuration production
 ```

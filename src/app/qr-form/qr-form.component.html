@@ -1,27 +1,28 @@
 <!-- CODIGO QR -->
-<h1>QR code Generator</h1>
+<h1 class="title">QR code Generator</h1>
 
-<qrcode [qrdata]="url" [width]="256" [errorCorrectionLevel]="errorCorLevel"></qrcode>
-
-
+<div class="qr-image-container">
+    <qrcode [qrdata]="url" [width]="qrWidth" [errorCorrectionLevel]="errorCorLevel"></qrcode>
+</div>
 
 
 <!-- FORMULARIO -->
-<form [formGroup]="myForm"  (ngSubmit)="enviarFormulario()">
+
+<form [formGroup]="myForm"  (ngSubmit)="enviarFormulario()" class="qr-form-container">
 
     <!-- URL -->
-    <div>
-        <label>Url</label>
-        <div>
+    <div class="qr-input-field-container">
+        <label>QR's url:</label>
+        <div class="qr-input-field">
             <input 
                 type="text"
                 formControlName="url"
-                placeholder="Ingrese la url"
+                placeholder="Insert the url"
             >
         </div>
     </div>
   
-    <button type="submit" [disabled]="myForm.invalid">Enviar</button>
+    <button type="submit" [disabled]="myForm.invalid">Create QR</button>
 </form>
 <!-- 
 <h2>Form Valid: {{ myForm.valid }} </h2>
