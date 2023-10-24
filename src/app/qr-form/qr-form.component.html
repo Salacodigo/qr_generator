@@ -8,11 +8,10 @@
 
 <!-- FORMULARIO -->
 
-<form [formGroup]="myForm"  (ngSubmit)="enviarFormulario()" class="qr-form-container">
+<form [formGroup]="myForm"  (ngSubmit)="sendForm()" class="qr-form-container">
 
     <!-- URL -->
     <div class="qr-input-field-container">
-        <label>QR's url:</label>
         <div class="qr-input-field">
             <input 
                 type="text"
@@ -22,7 +21,10 @@
         </div>
     </div>
   
-    <button type="submit" [disabled]="myForm.invalid">Create QR</button>
+    <button class="submit-button" type="submit" [disabled]="myForm.invalid">Create QR</button>
+    <div class="clear-button" (click)="cleanInput()">
+        <p>Limpiar</p>
+    </div>
 </form>
 <!-- 
 <h2>Form Valid: {{ myForm.valid }} </h2>
