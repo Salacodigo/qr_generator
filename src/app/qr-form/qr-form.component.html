@@ -1,29 +1,32 @@
 <!-- CODIGO QR -->
-<h1>QR code Generator</h1>
+<h1 class="title">QR code Generator</h1>
 
-<qrcode [qrdata]="url" [width]="256" [errorCorrectionLevel]="errorCorLevel"></qrcode>
-
-
-
+<div class="qr-image-container">
+    <qrcode [qrdata]="url" [width]="qrWidth" [errorCorrectionLevel]="errorCorLevel"></qrcode>
+    <p class="qr-link"> QR link: {{ url }} </p>
+</div>
 
 <!-- FORMULARIO -->
-<form [formGroup]="myForm"  (ngSubmit)="enviarFormulario()">
+
+<form [formGroup]="myForm"  (ngSubmit)="sendForm()" class="qr-form-container">
 
     <!-- URL -->
-    <div>
-        <label>Url</label>
-        <div>
+    <div class="qr-input-field-container">
+        <div class="qr-input-field">
             <input 
                 type="text"
                 formControlName="url"
-                placeholder="Ingrese la url"
+                placeholder="Insert the url"
             >
         </div>
     </div>
   
-    <button type="submit" [disabled]="myForm.invalid">Enviar</button>
+    <button class="submit-button" type="submit" [disabled]="myForm.invalid">Create QR</button>
+    <div class="clear-button" (click)="cleanInput()">
+        <p>Limpiar</p>
+    </div>
 </form>
-
+<!-- 
 <h2>Form Valid: {{ myForm.valid }} </h2>
 <h2>Form Status: {{ myForm.status }} </h2>
 <h2>Form Pending: {{ myForm.pending }} </h2>
@@ -32,5 +35,5 @@
 <pre>{{ myForm.errors | json }}</pre>
 
 <h3>url</h3>
-<pre>{{ myForm.controls['url'].errors | json }}</pre>
+<pre>{{ myForm.controls['url'].errors | json }}</pre> -->
 

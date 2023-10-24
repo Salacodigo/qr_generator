@@ -1,5 +1,5 @@
 {
-  "name": "my-new-app",
+  "name": "qr_generator",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

@@ -7,12 +7,14 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { LayoutComponent } from './layout/layout.component';
 import { QrFormComponent } from './qr-form/qr-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    QrFormComponent
+    QrFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

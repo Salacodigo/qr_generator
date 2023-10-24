@@ -1,0 +1,74 @@
+.title {
+    padding: 20px 0px 0px;
+    text-align: center;
+}
+
+.qr-image-container{
+    justify-content: center;
+}
+
+.qr-image-container .qr-link{
+    font-size: 10px;
+    text-align: end;
+    padding: 0px 10px;
+
+}
+
+.qr-form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.qr-input-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-input-field-container label {
+    margin: 5px;
+}
+
+
+.qr-input-field {
+    height: 40px;
+    margin: 5px;
+}
+
+.qr-input-field input{
+    border-radius: 20px;
+    border: 0.5px solid lightgray;
+    height: 40px;
+    padding: 3px 12px;
+    width: 100%;
+    
+}
+
+
+.qr-form-container button{
+    align-self: center;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 900;
+    height: 40px;
+    margin: 20px 0px;
+    padding: 5px 0px;
+    width: 200px;
+    
+}
+
+.clear-button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    color: gray;
+}

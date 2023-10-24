@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myNewApp": {
+    "QR_Generator": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-new-app",
+            "outputPath": "dist/QR_Generator",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "myNewApp:build:production"
+              "browserTarget": "QR_Generator:build:production"
             },
             "development": {
-              "browserTarget": "myNewApp:build:development"
+              "browserTarget": "QR_Generator:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myNewApp:build"
+            "browserTarget": "QR_Generator:build"
           }
         },
         "test": {
