@@ -29,7 +29,7 @@ export class QrFormComponent {
     url: [this.testUrl, [
       Validators.required,
       Validators.minLength(5),
-      Validators.maxLength(50),
+      Validators.maxLength(150),
     ]]
   });
 
