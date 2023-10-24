@@ -7,6 +7,13 @@
     justify-content: center;
 }
 
+.qr-image-container .qr-link{
+    font-size: 10px;
+    text-align: end;
+    padding: 0px 10px;
+
+}
+
 .qr-form-container{
     display: flex;
     flex-direction: column;
